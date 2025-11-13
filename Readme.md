@@ -44,9 +44,7 @@ Analyzing categorical distributions across groups
 
 ### Tools & Libraries
 - **R** (version 4.0+)
-- **tidyverse** - Data manipulation and visualization
-- **readr** - Reading CSV files
-- **ggplot2** - Advanced visualizations
+- **Only those tools and libraries taught in the module Team Research**
 
 ### Analysis Steps
 1. **Data Import & Cleaning**
