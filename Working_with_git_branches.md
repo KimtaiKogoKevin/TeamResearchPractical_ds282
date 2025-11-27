@@ -1,15 +1,17 @@
 # Git Workflow - Group A14
 
-## 🚨 RULE #1: NEVER PUSH TO MAIN
+## 📌 Updated Workflow: We Push to Main
 
-**Always work on YOUR branch!**
+After discussing with tutors, we've decided to **push directly to main** since tutors will only review the main branch for grading.
+
+**Important:** Be careful when pushing to avoid merge conflicts!
 
 ---
 
-## Team Branches
+## Team Members
 
-| Team Member | Your Branch |
-|-------------|-------------|
+| Team Member | GitHub Username |
+|-------------|-----------------|
 | Daniel Terna Tule | `DanielTule` |
 | Gideon Ganah | `GideonGanah` |
 | Kelvin Amaadi Baani-Anoff | `KelvinAmadi` |
@@ -20,84 +22,83 @@
 
 ## Daily Workflow
 
-### 1. Switch to YOUR Branch
+### 1. Always Pull Before You Start
 ```bash
-git checkout <YourBranchName>
+git checkout main
+git pull
 ```
+This gets the latest changes from the team.
 
-**Examples:**
-```bash
-git checkout DanielTule    # Daniel
-git checkout GideonGanah   # Gideon
-git checkout KelvinAmadi   # Kelvin
-git checkout KogoKevin     # Kevin
-git checkout Samuel        # Edosa
-```
-
-### 2. Check You're on the Right Branch
-```bash
-git branch
-```
-Look for the `*` - it should be next to YOUR branch name, **NOT main**.
-
-### 3. Do Your Work
+### 2. Do Your Work
 Edit your R scripts, create visualizations, etc.
+
+### 3. Check What Changed
+```bash
+git status
+```
 
 ### 4. Save and Push
 ```bash
 git add .
-git commit -m "What you did"
+git commit -m "Describe what you did"
+git pull                    # Pull again to catch any new changes
+git push                    # Push to main
+```
+
+---
+
+## Example Workflow
+```bash
+git checkout main                          # Make sure you're on main
+git pull                                   # Get latest changes
+# ... do your work in R ...
+git add .
+git commit -m "Added histogram for happiness score"
+git pull                                   # Check for updates before pushing
+git push                                   # Push to main
+```
+
+---
+
+## ⚠️ Avoiding Merge Conflicts
+
+### Best Practices:
+1. **Always pull before you start working**
+2. **Pull again right before pushing**
+3. **Work on different files when possible**
+4. **Communicate with team** before editing the same file
+5. **Push frequently** (don't wait days)
+6. **Keep commits small and focused**
+
+### If You Get a Merge Conflict:
+```bash
+git pull                    # Git will show which files conflict
+# Open the conflicting files and fix them
+git add .
+git commit -m "Resolved merge conflict"
 git push
 ```
 
 ---
 
-## Example: Daniel's Workflow
+## Communication Tips
 
+Before working on a file someone else might be editing:
+- Post in the group chat: "I'm working on analysis.R"
+- Check who's working on what
+- Coordinate to avoid conflicts
+
+---
+
+## Quick Reference
 ```bash
-git checkout DanielTule              # Switch to my branch
-git branch                           # Check: * DanielTule ✓
-# ... do work in R ...
-git add .
-git commit -m "Added summary statistics"
-git push                             # Pushes to DanielTule branch
+git pull                              # Get latest changes
+git status                            # See what you changed
+git add .                             # Stage all changes
+git commit -m "Your message"          # Save changes
+git push                              # Upload to GitHub
 ```
 
 ---
 
-
-
-###  DON'T DO THIS:
-```bash
-git checkout main        # Working on main!
-git push                 # Pushing to main!
-```
-
-### DO THIS:
-```bash
-git checkout DanielTule  # Work on YOUR branch
-git push                 # Push to YOUR branch
-```
-
----
-
-## Quick Check
-Before pushing, always run:
-```bash
-git branch
-```
-If you see `* main` → **STOP! Switch to your branch first!**
-
----
-
-## Merging to Main
-
-When your code is ready:
-1. Go to GitHub
-2. Create a Pull Request
-3. Team reviews
-4. Merge to main branch for final presentation
-
----
-
-**Remember: YOUR BRANCH → NOT MAIN** 
+**Key Point:** Since tutors only check main, we all push there. Just be careful and communicate to avoid conflicts!
