@@ -2,6 +2,7 @@ df <- read.csv("2015_original_dataset.csv")
 
 View(df)
 
+# Data Wrangling
 colnames(df)[3] <- "HappRank"
 colnames(df)[4] <- "HappScore"
 colnames(df)[5] <- "StdError"
@@ -9,6 +10,16 @@ colnames(df)[6] <- "GDPperCapita"
 colnames(df)[8] <- "LifeExpectancy"
 colnames(df)[10] <- "GovtTrust"
 colnames(df)[12] <- "Dystopia"
+
+# RENAMING OF COLUMNS 
+# Happiness Rank  --> HappRank
+# Happiness Score --> HappScore
+# Standard Error  --> StdError
+# Economy (GDP Per Capita) --> GDPperCapita
+# Health (Life Expectancy) --> LifeExpectancy
+# Trust (Government Corruption) --> GovtTrust
+# Dystopia Residual --> Dystopia
+
 
 top60 <- head(df[order(df$GDPperCapita, decreasing = FALSE), ], 60)
 bottom60 <- tail(df[order(df$GDPperCapita, decreasing = FALSE), ], 60)
