@@ -96,3 +96,25 @@ plot(bottom60$GDPperCapita, bottom60$HappScore,
      main = "Scatterplot of Happiness Score and GDP for low-productivity countries")
 
 dev.off()
+
+# Histogram for the entire happiness score
+h_hist <- hist(h,
+                # breaks = 20,
+                col = "lightblue",
+                main = "Histogram of Happiness Score (Frequency) for high-productivity with Normal Curve",
+                xlab = "Happiness Score",
+                ylab = "Frequency")
+
+# Create x-values for the curve of the entire happiness score
+x <- seq(min(h, na.rm = TRUE), max(h, na.rm = TRUE), length = 200)
+
+# Normal density values
+curve_y <- dnorm(x,
+                  mean = mean(h, na.rm = TRUE),
+                  sd = sd(h, na.rm = TRUE))
+
+# Scale the curve to the histogram frequency scale
+curve_y_scaled <- curve_y * max(h_hist$counts) / max(curve_y)
+
+# Add the curve
+lines(x, curve_y_scaled, col = "green", lwd = 2)
