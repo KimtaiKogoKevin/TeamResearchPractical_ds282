@@ -1,0 +1,87 @@
+df <- read.csv("2015_original_dataset.csv")
+
+View(df)
+
+colnames(df)[3] <- "HappRank"
+colnames(df)[4] <- "HappScore"
+colnames(df)[5] <- "StdError"
+colnames(df)[6] <- "GDPperCapita"
+colnames(df)[8] <- "LifeExpectancy"
+colnames(df)[10] <- "GovtTrust"
+colnames(df)[12] <- "Dystopia"
+
+top60 <- head(df[order(df$GDPperCapita, decreasing = FALSE), ], 60)
+bottom60 <- tail(df[order(df$GDPperCapita, decreasing = FALSE), ], 60)
+
+h <- df$`HappScore` 
+h1 <- top60$`HappScore` 
+h2 <- bottom60$`HappScore` 
+
+png("assets/HistogramPlots/top60Histogram.png", width = 800, height = 600)
+
+# Histogram using frequency (default)
+h1_hist <- hist(h1,
+               # breaks = 20,
+                col = "lightblue",
+                main = "Histogram of Happiness Score (Frequency) for high-productivity with Normal Curve",
+                xlab = "Happiness Score",
+                ylab = "Frequency")
+
+# Create x-values for the curve(top60)
+x1 <- seq(min(h1, na.rm = TRUE), max(h1, na.rm = TRUE), length = 200)
+
+# Normal density values
+curve_y1 <- dnorm(x1,
+                 mean = mean(h1, na.rm = TRUE),
+                 sd = sd(h1, na.rm = TRUE))
+
+# Scale the curve to the histogram frequency scale
+curve_y1_scaled <- curve_y1 * max(h1_hist$counts) / max(curve_y1)
+
+# Add the curve
+lines(x1, curve_y1_scaled, col = "red", lwd = 2)
+
+dev.off()
+
+png("assets/ScatterPlots/top60Scatter.png", width = 800, height = 600)
+
+plot(top60$GDPperCapita, top60$HappScore,
+     xlab = "Productivity",
+     ylab = "Happiness Score",
+     main = "Scatterplot of Happiness Score and GDP for high-productivity countries")
+
+dev.off()
+
+png("assets/HistogramPlots/bottom60Histogram.png", width = 800, height = 600)
+
+h2_hist <- hist(h2,
+               # breaks = 20,
+               col = "turquoise",
+               main = "Histogram of Happiness Score (Frequency) for low-productivity with Normal Curve",
+               xlab = "Happiness Score",
+               ylab = "Frequency")
+
+# Create x-values for the curve(bottom60)
+x2 <- seq(min(h2, na.rm = TRUE), max(h2, na.rm = TRUE), length = 200)
+
+# Normal density values
+curve_y2 <- dnorm(x2,
+                 mean = mean(h2, na.rm = TRUE),
+                 sd = sd(h2, na.rm = TRUE))
+
+# Scale the curve to the histogram frequency scale
+curve_y2_scaled <- curve_y2 * max(h2_hist$counts) / max(curve_y2)
+
+# Add the curve
+lines(x2, curve_y2_scaled, col = "magenta", lwd = 2)
+
+dev.off()
+
+png("assets/ScatterPlots/bottom60Scatter.png", width = 800, height = 600)
+
+plot(bottom60$GDPperCapita, bottom60$HappScore,
+     xlab = "Productivity",
+     ylab = "Happiness Score",
+     main = "Scatterplot of Happiness Score and GDP for low-productivity countries")
+
+dev.off()
