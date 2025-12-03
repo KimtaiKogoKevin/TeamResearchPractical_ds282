@@ -118,3 +118,19 @@ curve_y_scaled <- curve_y * max(h_hist$counts) / max(curve_y)
 
 # Add the curve
 lines(x, curve_y_scaled, col = "green", lwd = 2)
+
+
+
+
+
+# Correlation Analysis
+# Correlation for the entire dataset(in-terms of GDP)
+cor.test(df$HappScore, df$GDPperCapita, method = "pearson" )
+
+# Correlation for the top 60 countries
+cor.test(top60$HappScore, top60$GDPperCapita, method = "spearman")
+
+
+# Correlation for the bottom 60 countries(in-terms of GDP)
+cor.test(bottom60$HappScore, bottom60$GDPperCapita, method = "spearman")
+
