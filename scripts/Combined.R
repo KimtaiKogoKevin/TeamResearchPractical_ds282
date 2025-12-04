@@ -38,7 +38,7 @@ h_hist <- hist(h,
                xlab = "Happiness Score",
                ylab = "Frequency",
                ylim = c(0, 30.0),
-               xlim = c(2.0, 9.0))
+               xlim = c(2.0, 8.0))
 
 # Create x-values for the curve(top60)
 x <- seq(min(h, na.rm = TRUE), max(h, na.rm = TRUE), length = 200)
@@ -63,10 +63,8 @@ plot(df$GDPperCapita, df$HappScore,
      ylab = "Happiness Score",
      main = "Scatterplot of Happiness Score and GDP",
      pch = 19,
-     xlim = c(min(df$GDPperCapita) - 0.05,
-              max(df$GDPperCapita) + 0.05),
-     ylim = c(min(df$HappScore) - 0.2,
-              max(df$HappScore) + 0.2))
+     xlim = c(0, 2),
+     ylim = c(0, 8))
 
 abline(lm(HappScore ~ GDPperCapita, data = df),
        col = "red", lwd = 2)
@@ -108,10 +106,8 @@ plot(top60$GDPperCapita, top60$HappScore,
      ylab = "Happiness Score",
      main = "Scatterplot of Happiness Score and GDP for high-productivity countries",
      pch = 19,
-     xlim = c(min(top60$GDPperCapita) - 0.05,
-              max(top60$GDPperCapita) + 0.05),
-     ylim = c(min(top60$HappScore) - 0.2,
-              max(top60$HappScore) + 0.2))
+     xlim = c(0, 2),
+     ylim = c(0, 8))
     
 abline(lm(HappScore ~ GDPperCapita, data = top60),
        col = "red", lwd = 2)
@@ -127,7 +123,7 @@ h2_hist <- hist(h2,
                 xlab = "Happiness Score",
                 ylab = "Frequency",
                 ylim = c(0, 10.0),
-                xlim = c(2.0, 7.0))
+                xlim = c(2.0, 8.0))
 
 # Create x-values for the curve(bottom60)
 x2 <- seq(min(h2, na.rm = TRUE), max(h2, na.rm = TRUE), length = 200)
@@ -152,10 +148,8 @@ plot(bottom60$GDPperCapita, bottom60$HappScore,
      ylab = "Happiness Score",
      main = "Scatterplot of Happiness Score and GDP for low-productivity countries",
      pch = 19,
-     xlim = c(min(bottom60$GDPperCapita) - 0.05,
-              max(bottom60$GDPperCapita) + 0.05),
-     ylim = c(min(bottom60$HappScore) - 0.2,
-              max(bottom60$HappScore) + 0.2))
+     xlim = c(0, 2),
+     ylim = c(0, 8))
 
 abline(lm(HappScore ~ GDPperCapita, data = bottom60),
        col = "red", lwd = 2)
