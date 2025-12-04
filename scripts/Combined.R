@@ -21,8 +21,8 @@ colnames(df)[12] <- "Dystopia"
 # Dystopia Residual --> Dystopia
 
 
-top60 <- head(df[order(df$GDPperCapita, decreasing = FALSE), ], 60)
-bottom60 <- tail(df[order(df$GDPperCapita, decreasing = FALSE), ], 60)
+top60 <- head(df[order(df$GDPperCapita, decreasing = TRUE), ], 60)
+bottom60 <- tail(df[order(df$GDPperCapita, decreasing = TRUE), ], 60)
 
 h <- df$`HappScore` 
 h1 <- top60$`HappScore` 
@@ -83,7 +83,7 @@ h1_hist <- hist(h1,
                 xlab = "Happiness Score",
                 ylab = "Frequency",
                 ylim = c(0, 10.0),
-                xlim = c(2.0, 7.0))
+                xlim = c(2.0, 8.0))
 
 # Create x-values for the curve(top60)
 x1 <- seq(min(h1, na.rm = TRUE), max(h1, na.rm = TRUE), length = 200)
@@ -103,39 +103,39 @@ dev.off()
 
 png("assets/ScatterPlots/top60Scatter.png", width = 800, height = 600)
      
-    plot(top60$GDPperCapita, top60$HappScore,
-        xlab = "Productivity",
-        ylab = "Happiness Score",
-        main = "Scatterplot of Happiness Score and GDP for high-productivity countries",
-        pch = 19,
-        xlim = c(min(top60$GDPperCapita) - 0.05,
-                 max(top60$GDPperCapita) + 0.05),
-        ylim = c(min(top60$HappScore) - 0.2,
-                 max(top60$HappScore) + 0.2))
+plot(top60$GDPperCapita, top60$HappScore,
+     xlab = "Productivity",
+     ylab = "Happiness Score",
+     main = "Scatterplot of Happiness Score and GDP for high-productivity countries",
+     pch = 19,
+     xlim = c(min(top60$GDPperCapita) - 0.05,
+              max(top60$GDPperCapita) + 0.05),
+     ylim = c(min(top60$HappScore) - 0.2,
+              max(top60$HappScore) + 0.2))
     
-    abline(lm(HappScore ~ GDPperCapita, data = top60),
-          col = "red", lwd = 2)
+abline(lm(HappScore ~ GDPperCapita, data = top60),
+       col = "red", lwd = 2)
 
 dev.off()
 
 png("assets/HistogramPlots/bottom60Histogram.png", width = 800, height = 600)
 
 h2_hist <- hist(h2,
-               breaks = 15,
-               col = "khaki",
-               main = "Histogram of Happiness Score (Frequency) for low-productivity countries",
-               xlab = "Happiness Score",
-               ylab = "Frequency",
-               ylim = c(0, 10.0),
-               xlim = c(3.0, 8.0))
+                breaks = 15,
+                col = "khaki",
+                main = "Histogram of Happiness Score (Frequency) for low-productivity countries",
+                xlab = "Happiness Score",
+                ylab = "Frequency",
+                ylim = c(0, 10.0),
+                xlim = c(2.0, 7.0))
 
 # Create x-values for the curve(bottom60)
 x2 <- seq(min(h2, na.rm = TRUE), max(h2, na.rm = TRUE), length = 200)
 
 # Normal density values
 curve_y2 <- dnorm(x2,
-                 mean = mean(h2, na.rm = TRUE),
-                 sd = sd(h2, na.rm = TRUE))
+                  mean = mean(h2, na.rm = TRUE),
+                  sd = sd(h2, na.rm = TRUE))
 
 # Scale the curve to the histogram frequency scale
 curve_y2_scaled <- curve_y2 * max(h2_hist$counts) / max(curve_y2)
@@ -147,51 +147,20 @@ dev.off()
 
 png("assets/ScatterPlots/bottom60Scatter.png", width = 800, height = 600)
     
-    plot(bottom60$GDPperCapita, bottom60$HappScore,
-         xlab = "Productivity",
-         ylab = "Happiness Score",
-         main = "Scatterplot of Happiness Score and GDP for low-productivity countries",
-         pch = 19,
-         xlim = c(min(bottom60$GDPperCapita) - 0.05,
-                  max(bottom60$GDPperCapita) + 0.05),
-         ylim = c(min(bottom60$HappScore) - 0.2,
-                  max(bottom60$HappScore) + 0.2))
-    
-    abline(lm(HappScore ~ GDPperCapita, data = bottom60),
-           col = "red", lwd = 2)
-
 plot(bottom60$GDPperCapita, bottom60$HappScore,
      xlab = "Productivity",
      ylab = "Happiness Score",
-     main = "Scatterplot of Happiness Score and GDP for low-productivity countries")
+     main = "Scatterplot of Happiness Score and GDP for low-productivity countries",
+     pch = 19,
+     xlim = c(min(bottom60$GDPperCapita) - 0.05,
+              max(bottom60$GDPperCapita) + 0.05),
+     ylim = c(min(bottom60$HappScore) - 0.2,
+              max(bottom60$HappScore) + 0.2))
+
+abline(lm(HappScore ~ GDPperCapita, data = bottom60),
+       col = "red", lwd = 2)
 
 dev.off()
-
-# Histogram for the entire happiness score
-h_hist <- hist(h,
-                # breaks = 20,
-                col = "lightblue",
-                main = "Histogram of Happiness Score (Frequency) for high-productivity with Normal Curve",
-                xlab = "Happiness Score",
-                ylab = "Frequency")
-
-# Create x-values for the curve of the entire happiness score
-x <- seq(min(h, na.rm = TRUE), max(h, na.rm = TRUE), length = 200)
-
-# Normal density values
-curve_y <- dnorm(x,
-                  mean = mean(h, na.rm = TRUE),
-                  sd = sd(h, na.rm = TRUE))
-
-# Scale the curve to the histogram frequency scale
-curve_y_scaled <- curve_y * max(h_hist$counts) / max(curve_y)
-
-# Add the curve
-lines(x, curve_y_scaled, col = "green", lwd = 2)
-
-
-
-
 
 # Correlation Analysis
 # Correlation for the entire dataset(in-terms of GDP)
