@@ -118,7 +118,7 @@ png("assets/HistogramPlots/bottom60Histogram.png", width = 800, height = 600)
 
 h2_hist <- hist(h2,
                 breaks = 15,
-                col = "khaki",
+                col = "lightblue",
                 main = "Histogram of Happiness Score (Frequency) for low-productivity countries",
                 xlab = "Happiness Score",
                 ylab = "Frequency",
