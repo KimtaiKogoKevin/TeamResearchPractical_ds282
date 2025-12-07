@@ -1,5 +1,7 @@
-
 .Rhistory
 /.Rproj.user/
 .DS_Store
 ~$OM1079_Final report_template.docx
+.RData
+*.RData
+*.tmp
