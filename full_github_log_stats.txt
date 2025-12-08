@@ -1,0 +1,809 @@
+commit 34e4145c4b2f1659096edaa870a9ea5d5d103cfd
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Mon Dec 8 10:32:06 2025 +0000
+
+    I did minor corrections to the report
+
+ 7COM1079_Final report_template.docx | Bin 169168 -> 172614 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 32e7d2354109b12f4f531451b4a2b2de0c0c92d2
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Mon Dec 8 09:11:11 2025 +0000
+
+    Minor correction in 3
+
+ 7COM1079_Final report_template.docx | Bin 168824 -> 169168 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 49b7c1b1cc10d698e70c4a9d6f2a7df813f865d9
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Mon Dec 8 08:39:39 2025 +0000
+
+    Minor correction in 3.3
+
+ 7COM1079_Final report_template.docx | Bin 170988 -> 168824 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d0eb6affa04e7c6f3f398eaf1fd519f2981d3112
+Merge: 47a3c38 f7907ab
+Author: Edosa Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Mon Dec 8 03:37:10 2025 +0000
+
+    Merge pull request #7 from KimtaiKogoKevin/Samuel
+    
+    bg research
+
+commit f7907ab2a298682bd7a642f2dc6de1073ba8e7cc
+Author: Samuel Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Mon Dec 8 03:36:10 2025 +0000
+
+    bg research
+
+ 7COM1079_Final report_template.docx | Bin 168501 -> 170988 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 47a3c38f5ddbe57c80d3aa2b8c90afd57ee5efe6
+Author: Samuel Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Mon Dec 8 03:25:34 2025 +0000
+
+    ignore all temporary files
+
+ .gitignore | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8acc4ca3b7ce31477e2defa64fe76198183111d7
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Sun Dec 7 18:40:12 2025 +0000
+
+    Corrected error in visualisations. Scatter plots not showing.
+
+ 7COM1079_Final report_template.docx | Bin 155275 -> 168501 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f42241f03a72b1d950826f0742b4deed2a3eee6e
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Sun Dec 7 18:30:59 2025 +0000
+
+    I did some minor corrections in the report
+
+ 7COM1079_Final report_template.docx | Bin 155333 -> 155275 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ffaa50eb25e8fdc7ea1b16cef9e9e0d54a223e5c
+Merge: 28fa99a a4ebaee
+Author: Edosa Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Sun Dec 7 00:20:07 2025 +0000
+
+    Merge pull request #6 from KimtaiKogoKevin/Samuel
+    
+    Samuel - Repo and code cleanup
+
+commit a4ebaee1a5ad4431a9d2d3907f09e7e9e2050e56
+Author: Samuel Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Sun Dec 7 00:18:37 2025 +0000
+
+    cleanup: comment out correlation analysis print statements for clarity
+
+ scripts/Combined.R | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 2ba534b09f0e9fb0e063ebcbec94f970cb236746
+Author: Samuel Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Sun Dec 7 00:14:59 2025 +0000
+
+    chore: cleanup repository and consolidate analysis scripts
+    
+    - Remove redundant draft scripts (ColRename.R, assign_region.R, etc.) in favor of the master script (Combined.R).
+    - Refactor 'scripts/Combined.R' to include directory creation checks and explicit correlation output.
+    - Update 'Readme.md' with clear project structure, research question, and execution instructions.
+    - Update '.gitignore' to exclude local R environment files (.RData, .Rhistory).
+    - Remove local environment files from the repository to ensure a clean state.
+
+ .RData                                      | Bin 34153 -> 0 bytes
+ .gitignore                                  |   6 +-
+ Readme.md                                   |  46 ++++++-----
+ Scatter Plot.png                            | Bin 7256 -> 0 bytes
+ assets/HistogramPlots/bottom60Histogram.png | Bin 38001 -> 6284 bytes
+ assets/HistogramPlots/top60Histogram.png    | Bin 38342 -> 6141 bytes
+ assets/HistogramPlots/totalHistogram.png    | Bin 42133 -> 7218 bytes
+ assets/ScatterPlots/bottom60Scatter.png     | Bin 40775 -> 4537 bytes
+ assets/ScatterPlots/top60Scatter.png        | Bin 41745 -> 4762 bytes
+ assets/ScatterPlots/totalScatter.png        | Bin 51955 -> 5507 bytes
+ scripts/.RData                              | Bin 13958 -> 0 bytes
+ scripts/ColRename.R                         |   9 --
+ scripts/Combined.R                          | 123 +++++++++++++---------------
+ scripts/HappinessScore_normalDist.R         |  23 ------
+ scripts/assign_region.R                     |  64 ---------------
+ scripts/world happiness2.R                  |  15 ----
+ ~WRL0824.tmp                                | Bin 38476 -> 0 bytes
+ 17 files changed, 89 insertions(+), 197 deletions(-)
+ delete mode 100644 .RData
+ delete mode 100644 Scatter Plot.png
+ delete mode 100644 scripts/.RData
+ delete mode 100644 scripts/ColRename.R
+ delete mode 100644 scripts/HappinessScore_normalDist.R
+ delete mode 100644 scripts/assign_region.R
+ delete mode 100644 scripts/world happiness2.R
+ delete mode 100644 ~WRL0824.tmp
+
+commit 28fa99affacfc0cf55c4ecdce5dff00c724389b3
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Sat Dec 6 23:27:50 2025 +0000
+
+    I added the conclusion of our analysis to the report
+
+ 7COM1079_Final report_template.docx | Bin 152493 -> 155333 bytes
+ scripts/.RData                      | Bin 0 -> 13958 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 scripts/.RData
+
+commit 2fdf8ed9fc8d280897ce280eea2abcf76e42e060
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Sat Dec 6 19:10:28 2025 +0000
+
+    Cleaning up report. Visualisations moved to after table of contents for clarity.
+
+ 7COM1079_Final report_template.docx | Bin 288341 -> 152493 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 6e9bb69a4c11cb8ec9f63bb453df24c73abf7bac
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Sat Dec 6 10:29:31 2025 +0000
+
+    Description for visualisations, 3.2 and 3.3, polished.
+
+ 7COM1079_Final report_template.docx | Bin 287303 -> 288341 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9905ee62586ae851394ac33b2d7b282637adc6ac
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Fri Dec 5 19:28:34 2025 +0000
+
+    Visualisation infor and description added to doc
+
+ 7COM1079_Final report_template.docx         | Bin 42249 -> 287303 bytes
+ assets/HistogramPlots/bottom60Histogram.png | Bin 38043 -> 38001 bytes
+ scripts/Combined.R                          |   2 +-
+ 3 files changed, 1 insertion(+), 1 deletion(-)
+
+commit a2bac1084b4deaf015a9866ee9e8dcad6937e632
+Author: Pirategh <kb24aby@herts.ac.uk>
+Date:   Thu Dec 4 23:40:28 2025 +0000
+
+     Kelvin I made edits to the word count: updated Chapter 5 in report template
+
+ 7COM1079_Final report_template.docx | Bin 39886 -> 42249 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b6677169a152234567ef78a1fba5beb5493db34e
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Thu Dec 4 19:11:46 2025 +0000
+
+    Completed Introduction section of the documentation
+
+ 7COM1079_Final report_template.docx | Bin 39460 -> 39886 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 08b17e85bbc380202159dcb13d8bfd7210dbf489
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Thu Dec 4 16:52:00 2025 +0000
+
+    Made all visualisations have uniform graduation.
+
+ .RData | Bin 34171 -> 34153 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ca6c9fda360c6e9ff4f2f6d139546e0315d382a9
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Thu Dec 4 16:51:28 2025 +0000
+
+    Made all visualisations have uniform graduation.
+
+ assets/HistogramPlots/bottom60Histogram.png | Bin 38711 -> 38043 bytes
+ assets/HistogramPlots/totalHistogram.png    | Bin 41251 -> 42133 bytes
+ assets/ScatterPlots/bottom60Scatter.png     | Bin 41901 -> 40775 bytes
+ assets/ScatterPlots/top60Scatter.png        | Bin 42953 -> 41745 bytes
+ assets/ScatterPlots/totalScatter.png        | Bin 55333 -> 51955 bytes
+ scripts/Combined.R                          |  22 ++++++++--------------
+ 6 files changed, 8 insertions(+), 14 deletions(-)
+
+commit 590f40ffb84f4da3c5e839c8f3bff82d37034036
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Thu Dec 4 16:50:37 2025 +0000
+
+    Added the introduction plus research question need to finish up on the null and alterantive hypothesis today
+
+ 7COM1079_Final report_template.docx | Bin 38476 -> 39460 bytes
+ ~WRL0824.tmp                        | Bin 0 -> 38476 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ~WRL0824.tmp
+
+commit 109d858e8eb74f7daf07c616623380128c9c11f0
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Thu Dec 4 16:05:47 2025 +0000
+
+    Realised error while documenting visualisations. Decreasing is supposed to be true, this means our visuals have changed.
+
+ .RData                                      | Bin 33867 -> 34171 bytes
+ assets/HistogramPlots/bottom60Histogram.png | Bin 38388 -> 38711 bytes
+ assets/HistogramPlots/top60Histogram.png    | Bin 39579 -> 38342 bytes
+ assets/ScatterPlots/bottom60Scatter.png     | Bin 42813 -> 41901 bytes
+ assets/ScatterPlots/top60Scatter.png        | Bin 42019 -> 42953 bytes
+ scripts/Combined.R                          |  95 ++++++++++------------------
+ 6 files changed, 32 insertions(+), 63 deletions(-)
+
+commit e02aa4d2230d5941d9acf5a503f695d3758448f9
+Merge: b468331 aff9bcc
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Wed Dec 3 23:09:45 2025 +0000
+
+     Added the first paragraph of the introduction
+
+commit b46833180a9567ce7929a02e00eaff93bce68e7e
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Wed Dec 3 22:42:12 2025 +0000
+
+     Added the first paragraph of the introduction
+
+ .RData                              | Bin 0 -> 33867 bytes
+ 7COM1079_Final report_template.docx | Bin 37910 -> 38476 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .RData
+
+commit aff9bcc0882a3f98fa3484b17f1e3b450dc749e1
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 22:38:00 2025 +0000
+
+    Minor corrections to Report
+
+ .RData | Bin 0 -> 33867 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .RData
+
+commit 937840f578c0d1a1ee7a6553b3daf2381949de25
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 22:32:00 2025 +0000
+
+    I did some minor corrections to the report file
+
+ 7COM1079_Final report_template.docx | Bin 38640 -> 38800 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 8ed71024f57709320d00c04514ef34b439afc984
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 22:23:21 2025 +0000
+
+    I have added the statistical analyses to the word document. that is the chapter 4
+
+ 7COM1079_Final report_template.docx | Bin 37910 -> 38640 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ba80604a3b8f627e9b5cf1e2caf37a56fb899fe6
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Wed Dec 3 21:28:20 2025 +0000
+
+    Forgot to exclude DSStore added to gitignore
+
+ .DS_Store                       | Bin 10244 -> 0 bytes
+ .gitignore                      |   1 +
+ assets/.DS_Store                | Bin 8196 -> 0 bytes
+ assets/HistogramPlots/.DS_Store | Bin 6148 -> 0 bytes
+ assets/ScatterPlots/.DS_Store   | Bin 6148 -> 0 bytes
+ 5 files changed, 1 insertion(+)
+ delete mode 100644 .DS_Store
+ delete mode 100644 assets/.DS_Store
+ delete mode 100644 assets/HistogramPlots/.DS_Store
+ delete mode 100644 assets/ScatterPlots/.DS_Store
+
+commit 73ed0de48b04ca9223c28ca4cdaf6b1047da079f
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Wed Dec 3 21:27:16 2025 +0000
+
+    Activcated the .gitignore to remove unnessary R files going foward that are not , such as RHistory and the Rproject user folder
+
+ .Rhistory                                       | 512 ------------------------
+ .Rproj.user/5362696E/pcs/files-pane.pper        |   9 -
+ .Rproj.user/5362696E/pcs/source-pane.pper       |   3 -
+ .Rproj.user/5362696E/pcs/windowlayoutstate.pper |  14 -
+ .Rproj.user/5362696E/pcs/workbench-pane.pper    |   5 -
+ .Rproj.user/5362696E/rmd-outputs                |   5 -
+ .Rproj.user/5362696E/saved_source_markers       |   1 -
+ .Rproj.user/5362696E/sources/prop/0FC0FB6F      |   7 -
+ .Rproj.user/5362696E/sources/prop/7B4F1A7B      |   6 -
+ .Rproj.user/5362696E/sources/prop/F0D65BFC      |   4 -
+ .Rproj.user/5362696E/sources/prop/FF3DE595      |   4 -
+ .Rproj.user/5362696E/sources/prop/INDEX         |   6 -
+ .Rproj.user/shared/notebooks/patch-chunk-names  |   0
+ .Rproj.user/shared/notebooks/paths              |   4 -
+ .gitignore                                      |   5 +-
+ 15 files changed, 2 insertions(+), 583 deletions(-)
+ delete mode 100644 .Rhistory
+ delete mode 100644 .Rproj.user/5362696E/pcs/files-pane.pper
+ delete mode 100644 .Rproj.user/5362696E/pcs/source-pane.pper
+ delete mode 100644 .Rproj.user/5362696E/pcs/windowlayoutstate.pper
+ delete mode 100644 .Rproj.user/5362696E/pcs/workbench-pane.pper
+ delete mode 100644 .Rproj.user/5362696E/rmd-outputs
+ delete mode 100644 .Rproj.user/5362696E/saved_source_markers
+ delete mode 100644 .Rproj.user/5362696E/sources/prop/0FC0FB6F
+ delete mode 100644 .Rproj.user/5362696E/sources/prop/7B4F1A7B
+ delete mode 100644 .Rproj.user/5362696E/sources/prop/F0D65BFC
+ delete mode 100644 .Rproj.user/5362696E/sources/prop/FF3DE595
+ delete mode 100644 .Rproj.user/5362696E/sources/prop/INDEX
+ delete mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ delete mode 100644 .Rproj.user/shared/notebooks/paths
+
+commit 1db3bcd8c327852806ed829039e75a2b104e5d18
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Wed Dec 3 21:23:04 2025 +0000
+
+    added the problem area and our mmotivation behind the study to the repo , the document is still very messy at the moment  but we aim to fine tune it soon
+
+ 7$OM1079_Final report_template_changed.docx | Bin 162 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 7$OM1079_Final report_template_changed.docx
+
+commit 0dbec192491ab8648849075b36ab0fe75e3a98f6
+Author: KimtaiKogoKevin <kevinkogo@gmail.com>
+Date:   Wed Dec 3 21:08:22 2025 +0000
+
+    MAde some changes to the Introduction and a clarification with group memebers that this is the file we will edit for our main report and not the duplicate which I will proceed to delete
+
+ 7$OM1079_Final report_template_changed.docx | Bin 0 -> 162 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 7$OM1079_Final report_template_changed.docx
+
+commit b003f81ff9aae7bb8fc63fb54aca7298f6afd66d
+Merge: ad553e6 2a29ce5
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 18:04:11 2025 +0000
+
+    I resolved the merge conflict and added the resolved file
+
+commit ad553e635848629af68db9deded981c173ed3c24
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 17:52:10 2025 +0000
+
+    I have done the statistical tests which are updated in the combined R script in the assets directory
+
+ scripts/Combined.R                  |  18 +++++++++++++++++-
+ ~$OM1079_Final report_template.docx | Bin 162 -> 0 bytes
+ 2 files changed, 17 insertions(+), 1 deletion(-)
+ delete mode 100644 ~$OM1079_Final report_template.docx
+
+commit 2a29ce5c6fe6e77c7a1978c669f91d6e654a32c8
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Wed Dec 3 16:13:50 2025 +0000
+
+    Corrected some minor labeling errors in our code and generated accurate visualisations.
+
+ .DS_Store                                       | Bin 10244 -> 10244 bytes
+ .Rhistory                                       | 202 ++++++++++++------------
+ .Rproj.user/5362696E/pcs/windowlayoutstate.pper |  10 +-
+ assets/.DS_Store                                | Bin 8196 -> 8196 bytes
+ assets/HistogramPlots/bottom60Histogram.png     | Bin 39277 -> 38388 bytes
+ assets/HistogramPlots/top60Histogram.png        | Bin 40269 -> 39579 bytes
+ assets/HistogramPlots/totalHistogram.png        | Bin 41249 -> 41251 bytes
+ assets/ScatterPlots/top60Scatter.png            | Bin 41901 -> 42019 bytes
+ assets/ScatterPlots/totalScatter.png            | Bin 57063 -> 55333 bytes
+ scripts/Combined.R                              |  79 +--------
+ 10 files changed, 112 insertions(+), 179 deletions(-)
+
+commit 0e886039bf1a0b78a9a439f1ca55ea5aeecff087
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Wed Dec 3 15:48:31 2025 +0000
+
+    I noticed the update, but the x-axis is still going out of bounds, so I've corrected that.
+
+ .DS_Store                                          | Bin 10244 -> 10244 bytes
+ .Rhistory                                          | 601 +++++++++++++++------
+ .Rproj.user/5362696E/pcs/windowlayoutstate.pper    |   2 +-
+ assets/.DS_Store                                   | Bin 10244 -> 8196 bytes
+ assets/HistogramPlots/.DS_Store                    | Bin 6148 -> 6148 bytes
+ ...istribution of the entire dataset HappScore.png | Bin 10739 -> 0 bytes
+ 6 files changed, 442 insertions(+), 161 deletions(-)
+ delete mode 100644 assets/HistogramPlots/Distribution of the entire dataset HappScore.png
+
+commit 03e2a983b92ab0ccd18c457cee13951a2b903a23
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Wed Dec 3 15:32:43 2025 +0000
+
+    Visualisations updated as per Monday's feedback.
+
+ .DS_Store                                          | Bin 10244 -> 10244 bytes
+ .Rproj.user/5362696E/pcs/source-pane.pper          |   2 +-
+ .Rproj.user/5362696E/pcs/windowlayoutstate.pper    |  12 +-
+ assets/.DS_Store                                   | Bin 10244 -> 10244 bytes
+ assets/HistogramPlots/.DS_Store                    | Bin 0 -> 6148 bytes
+ .../Distribution_of_GDP_per_capita.png             | Bin 19941 -> 0 bytes
+ .../Distribution_of_HapinessScore.png              | Bin 19693 -> 0 bytes
+ assets/HistogramPlots/bottom60Histogram.png        | Bin 39836 -> 39277 bytes
+ assets/HistogramPlots/top60Histogram.png           | Bin 40515 -> 40269 bytes
+ assets/HistogramPlots/totalHistogram.png           | Bin 0 -> 41249 bytes
+ assets/ScatterPlots/.DS_Store                      | Bin 0 -> 6148 bytes
+ assets/ScatterPlots/bottom60Scatter.png            | Bin 35472 -> 42813 bytes
+ assets/ScatterPlots/top60Scatter.png               | Bin 38019 -> 41901 bytes
+ assets/ScatterPlots/totalScatter.png               | Bin 0 -> 57063 bytes
+ scripts/Combined.R                                 | 138 ++++++++++++++++++---
+ 15 files changed, 131 insertions(+), 21 deletions(-)
+ create mode 100644 assets/HistogramPlots/.DS_Store
+ delete mode 100644 assets/HistogramPlots/Distribution_of_GDP_per_capita.png
+ delete mode 100644 assets/HistogramPlots/Distribution_of_HapinessScore.png
+ create mode 100644 assets/HistogramPlots/totalHistogram.png
+ create mode 100644 assets/ScatterPlots/.DS_Store
+ create mode 100644 assets/ScatterPlots/totalScatter.png
+
+commit fae0f0592f87ff34bf6577968f8cab36875fd3a4
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 15:20:02 2025 +0000
+
+    I editted the combined R script to add the code for generating the histogram for the entire dataset. I also exported the PNG file to the assets directory
+
+ ...istribution of the entire dataset HappScore.png | Bin 0 -> 10739 bytes
+ scripts/Combined.R                                 |  24 ++++++++++++++++++++-
+ 2 files changed, 23 insertions(+), 1 deletion(-)
+ create mode 100644 assets/HistogramPlots/Distribution of the entire dataset HappScore.png
+
+commit 6085a92fef27ebde7a11c2da24b8db9247f79a6a
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 14:49:48 2025 +0000
+
+    I did some commenting of the renamed columns in the combined R file
+
+ scripts/Combined.R                  |  11 +++++++++++
+ ~$OM1079_Final report_template.docx | Bin 0 -> 162 bytes
+ 2 files changed, 11 insertions(+)
+ create mode 100644 ~$OM1079_Final report_template.docx
+
+commit 8a54df65ea11db0e14525e13f41e212ea83203d5
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 13:14:44 2025 +0000
+
+    I did some spell-check in chapter 5
+
+ 7COM1079_Final report_template.docx | Bin 37925 -> 37910 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 52f4fd7fc065df1a43283d52ad57c28fd1efdcda
+Merge: 18b0507 0a58ae6
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 13:04:01 2025 +0000
+
+    Merge branch 'main' of https://github.com/KimtaiKogoKevin/TeamResearchPractical_ds282
+    "I am trying to pull the updated repo, I have to save my local changes first"
+
+commit 18b05072023513b94b553deb96c01f4820b8d6f4
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Wed Dec 3 13:03:37 2025 +0000
+
+    Saved local changes before pulling
+
+ .gitignore                                  |   4 ++
+ TeamResearchPractical_ds282.Rproj           |  13 +++++
+ assets/.DS_Store                            | Bin 0 -> 10244 bytes
+ assets/HistogramPlots/bottom60Histogram.png | Bin 0 -> 39836 bytes
+ assets/HistogramPlots/top60Histogram.png    | Bin 0 -> 40515 bytes
+ assets/ScatterPlots/bottom60Scatter.png     | Bin 0 -> 35472 bytes
+ assets/ScatterPlots/top60Scatter.png        | Bin 0 -> 38019 bytes
+ scripts/Combined.R                          |  87 ++++++++++++++++++++++++++++
+ 8 files changed, 104 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 TeamResearchPractical_ds282.Rproj
+ create mode 100644 assets/.DS_Store
+ create mode 100644 assets/HistogramPlots/bottom60Histogram.png
+ create mode 100644 assets/HistogramPlots/top60Histogram.png
+ create mode 100644 assets/ScatterPlots/bottom60Scatter.png
+ create mode 100644 assets/ScatterPlots/top60Scatter.png
+ create mode 100644 scripts/Combined.R
+
+commit 0a58ae695c69569e8f93c489923b013367385855
+Author: Pirategh <kb24aby@herts.ac.uk>
+Date:   Tue Dec 2 18:47:36 2025 +0000
+
+    Added Chapter 5: Evaluation section with group experience analysis
+
+ 7COM1079_Final report_template.docx | Bin 36098 -> 37925 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7b0eb53d54165ae6009fb5c9d5919139719a0554
+Merge: 354f3bb a4f859d
+Author: Samuel Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Tue Dec 2 01:32:44 2025 +0000
+
+    Add .gitignore file to exclude R project files
+
+commit 354f3bba47ea032666a26d2777e704ef787d2bad
+Author: Samuel Izevbizua <80903513+samuelizevbizua@users.noreply.github.com>
+Date:   Tue Dec 2 01:30:30 2025 +0000
+
+     Add .gitignore file to exclude R project files
+
+ .gitignore | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 .gitignore
+
+commit a4f859d0dda78c6fd68d99e83243dff3e56223cd
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Mon Dec 1 13:25:59 2025 +0000
+
+    Update Rhistory file
+
+ .Rhistory | 205 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 205 insertions(+)
+
+commit 395872150635e6b03d86ea6747cfb615b7ea9f43
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Mon Dec 1 13:23:22 2025 +0000
+
+    I've done the visulisations for the otop and bottom 60 categories.
+
+ .DS_Store                                          | Bin 8196 -> 10244 bytes
+ .Rhistory                                          |  22 ++++++
+ .Rproj.user/5362696E/pcs/files-pane.pper           |   2 +-
+ .Rproj.user/5362696E/pcs/source-pane.pper          |   2 +-
+ .Rproj.user/5362696E/pcs/workbench-pane.pper       |   2 +-
+ .Rproj.user/5362696E/sources/prop/INDEX            |   2 +
+ .../sources/session-65c5a2dc/0B0E832B-contents     |  11 ---
+ .../sources/session-65c5a2dc/1E6C17EB-contents     |   0
+ .../5362696E/sources/session-65c5a2dc/2C60E2C3     |  34 --------
+ .../sources/session-65c5a2dc/2C60E2C3-contents     |   0
+ .../sources/session-65c5a2dc/3CAFC681-contents     |   0
+ .../sources/session-65c5a2dc/685056E9-contents     |   0
+ .../5362696E/sources/session-65c5a2dc/72CF8A96     |  34 --------
+ .../sources/session-65c5a2dc/72CF8A96-contents     |   0
+ .../sources/session-65c5a2dc/98E2C98F-contents     |   9 ---
+ .../sources/session-65c5a2dc/A6BB6601-contents     |   0
+ .../sources/session-65c5a2dc/DF0D0F56-contents     |   0
+ .../sources/session-65c5a2dc/EFD3C7A9-contents     |  64 ---------------
+ .../5362696E/sources/session-65c5a2dc/lock_file    |   0
+ .Rproj.user/shared/notebooks/paths                 |   3 +-
+ .gitignore                                         |   4 +
+ TeamResearchPractical_ds282.Rproj                  |  13 +++
+ assets/.DS_Store                                   | Bin 0 -> 10244 bytes
+ assets/HistogramPlots/bottom60Histogram.png        | Bin 0 -> 39836 bytes
+ assets/HistogramPlots/top60Histogram.png           | Bin 0 -> 40515 bytes
+ assets/ScatterPlots/bottom60Scatter.png            | Bin 0 -> 35472 bytes
+ assets/ScatterPlots/top60Scatter.png               | Bin 0 -> 38019 bytes
+ scripts/Combined.R                                 |  87 +++++++++++++++++++++
+ 28 files changed, 133 insertions(+), 156 deletions(-)
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/0B0E832B-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/1E6C17EB-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/2C60E2C3
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/2C60E2C3-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/3CAFC681-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/685056E9-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/72CF8A96
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/72CF8A96-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/98E2C98F-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/A6BB6601-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/DF0D0F56-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/EFD3C7A9-contents
+ delete mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/lock_file
+ create mode 100644 .gitignore
+ create mode 100644 TeamResearchPractical_ds282.Rproj
+ create mode 100644 assets/.DS_Store
+ create mode 100644 assets/HistogramPlots/bottom60Histogram.png
+ create mode 100644 assets/HistogramPlots/top60Histogram.png
+ create mode 100644 assets/ScatterPlots/bottom60Scatter.png
+ create mode 100644 assets/ScatterPlots/top60Scatter.png
+ create mode 100644 scripts/Combined.R
+
+commit 690b6d52d0a7ba87e26c361e81b07cc3d736a80a
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Fri Nov 28 18:28:30 2025 +0000
+
+    I have added the report file  for working
+
+ 7COM1079_Final report_template.docx | Bin 0 -> 36098 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 7COM1079_Final report_template.docx
+
+commit 417757e42daa8f6df717861b1879bb1c505f32a9
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Thu Nov 27 16:16:35 2025 +0000
+
+    I have added The R Script for the Top 50 / Buttom 50 GDP Correlation analysis
+
+ scripts/world happiness2.R | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+ create mode 100644 scripts/world happiness2.R
+
+commit f507665a547ca903d75e10264db3c5a3fe65a404
+Author: Daniel Tule <139072642+lescrowe@users.noreply.github.com>
+Date:   Thu Nov 27 15:48:18 2025 +0000
+
+    I've renamed some columns with long names.
+
+ .DS_Store                                          | Bin 0 -> 8196 bytes
+ .Rhistory                                          |   4 ++
+ .Rproj.user/5362696E/pcs/files-pane.pper           |   9 +++
+ .Rproj.user/5362696E/pcs/source-pane.pper          |   3 +
+ .Rproj.user/5362696E/pcs/windowlayoutstate.pper    |  14 +++++
+ .Rproj.user/5362696E/pcs/workbench-pane.pper       |   5 ++
+ .Rproj.user/5362696E/rmd-outputs                   |   5 ++
+ .Rproj.user/5362696E/saved_source_markers          |   1 +
+ .Rproj.user/5362696E/sources/prop/0FC0FB6F         |   7 +++
+ .Rproj.user/5362696E/sources/prop/7B4F1A7B         |   6 ++
+ .Rproj.user/5362696E/sources/prop/F0D65BFC         |   4 ++
+ .Rproj.user/5362696E/sources/prop/FF3DE595         |   4 ++
+ .Rproj.user/5362696E/sources/prop/INDEX            |   4 ++
+ .../sources/session-65c5a2dc/0B0E832B-contents     |  11 ++++
+ .../sources/session-65c5a2dc/1E6C17EB-contents     |   0
+ .../5362696E/sources/session-65c5a2dc/2C60E2C3     |  34 +++++++++++
+ .../sources/session-65c5a2dc/2C60E2C3-contents     |   0
+ .../sources/session-65c5a2dc/3CAFC681-contents     |   0
+ .../sources/session-65c5a2dc/685056E9-contents     |   0
+ .../5362696E/sources/session-65c5a2dc/72CF8A96     |  34 +++++++++++
+ .../sources/session-65c5a2dc/72CF8A96-contents     |   0
+ .../sources/session-65c5a2dc/98E2C98F-contents     |   9 +++
+ .../sources/session-65c5a2dc/A6BB6601-contents     |   0
+ .../sources/session-65c5a2dc/DF0D0F56-contents     |   0
+ .../sources/session-65c5a2dc/EFD3C7A9-contents     |  64 +++++++++++++++++++++
+ .../5362696E/sources/session-65c5a2dc/lock_file    |   0
+ .Rproj.user/shared/notebooks/patch-chunk-names     |   0
+ .Rproj.user/shared/notebooks/paths                 |   3 +
+ scripts/ColRename.R                                |   9 +++
+ 29 files changed, 230 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/5362696E/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/5362696E/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/5362696E/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/5362696E/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/5362696E/rmd-outputs
+ create mode 100644 .Rproj.user/5362696E/saved_source_markers
+ create mode 100644 .Rproj.user/5362696E/sources/prop/0FC0FB6F
+ create mode 100644 .Rproj.user/5362696E/sources/prop/7B4F1A7B
+ create mode 100644 .Rproj.user/5362696E/sources/prop/F0D65BFC
+ create mode 100644 .Rproj.user/5362696E/sources/prop/FF3DE595
+ create mode 100644 .Rproj.user/5362696E/sources/prop/INDEX
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/0B0E832B-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/1E6C17EB-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/2C60E2C3
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/2C60E2C3-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/3CAFC681-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/685056E9-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/72CF8A96
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/72CF8A96-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/98E2C98F-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/A6BB6601-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/DF0D0F56-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/EFD3C7A9-contents
+ create mode 100644 .Rproj.user/5362696E/sources/session-65c5a2dc/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 scripts/ColRename.R
+
+commit ffd715865c84bc07b4b2bda200d66fd7f7e887dd
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Thu Nov 27 13:37:07 2025 +0000
+
+     change to working with git file  regarding not pushing to main because the tutors will mainly evaluate the main branch , and after conultation they say there is no need for branching, additionally I have added a folder with our power point slides for the first presentation
+
+ .../Group A14 Demo Presentation Slides.pptx        | Bin 0 -> 135819 bytes
+ Working_with_git_branches.md                       | 107 +++++++++++----------
+ 2 files changed, 54 insertions(+), 53 deletions(-)
+ create mode 100644 PresentationSlides/Group A14 Demo Presentation Slides.pptx
+
+commit 4839220088420c5daf18760009d9dd3a4f95fd2d
+Merge: bbdb68a 169e809
+Author: KK_Kimutai <kk24acz@herts.ac.uk>
+Date:   Thu Nov 27 11:30:09 2025 +0000
+
+    Merge pull request #4 from KimtaiKogoKevin/GideonGanah
+    
+    I added the scatter plot
+
+commit 169e809cf62a7bfe56ff461a856f53786a03f6b5
+Author: Gideon Ganah <gg24abh@herts.ac.uk>
+Date:   Thu Nov 27 09:58:01 2025 +0000
+
+    I added the scatter plot
+
+ Scatter Plot.png | Bin 0 -> 7256 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Scatter Plot.png
+
+commit bbdb68a9b745b565093f6b220d2b3d788df06624
+Merge: d7a9b91 e28ae00
+Author: KK_Kimutai <kk24acz@herts.ac.uk>
+Date:   Thu Nov 27 00:55:42 2025 +0000
+
+    Merge pull request #3 from KimtaiKogoKevin/KogoKevin
+    
+    Created scripts directory where I have saved two scripts , one for di…
+
+commit e28ae00b3519515cc7639264e2aab09bc25f3a9c
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Thu Nov 27 00:54:01 2025 +0000
+
+    Created scripts directory where I have saved two scripts , one for dividing the dataset into different regions and one that draws a histogram with a curve showing that the data is normally distributed
+
+ scripts/HappinessScore_normalDist.R        | 23 +++++++++++++++++++++++
+ assign_region.R => scripts/assign_region.R |  0
+ 2 files changed, 23 insertions(+)
+ create mode 100644 scripts/HappinessScore_normalDist.R
+ rename assign_region.R => scripts/assign_region.R (100%)
+
+commit d7a9b914d3e94e459320ff87faf9d972357bd904
+Merge: 2836f16 3250c62
+Author: KK_Kimutai <kk24acz@herts.ac.uk>
+Date:   Tue Nov 25 19:50:45 2025 +0000
+
+    Merge pull request #2 from KimtaiKogoKevin/KogoKevin
+    
+    a function to map the data into different regions
+
+commit 3250c62f43f3ec64c4e3da90fc96ab7ef022ce2b
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Tue Nov 25 19:49:00 2025 +0000
+
+    a function to mmap the data into different regions
+
+ assign_region.R | 64 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 64 insertions(+)
+ create mode 100644 assign_region.R
+
+commit 2836f16c895d79776bd30b9312b283cee91a377f
+Merge: bb87bce b2c99c6
+Author: KK_Kimutai <kk24acz@herts.ac.uk>
+Date:   Fri Nov 14 01:47:27 2025 +0000
+
+    Merge pull request #1 from KimtaiKogoKevin/KogoKevin
+    
+    Merging to main branch  the two plots that show distribution of independent and dependent variable
+
+commit b2c99c6bce64bf548dc704a58ac6b781fed2cdc5
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Fri Nov 14 01:41:56 2025 +0000
+
+    Distribution of chosen variables for research question with correction
+
+ assets/HistogramPlots/Distribution_of_GDP_perCapita.png | Bin 19693 -> 0 bytes
+ .../HistogramPlots/Distribution_of_GDP_per_capita.png   | Bin 0 -> 19941 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 assets/HistogramPlots/Distribution_of_GDP_perCapita.png
+ create mode 100644 assets/HistogramPlots/Distribution_of_GDP_per_capita.png
+
+commit 84fec0218ed8d4fcd34b0a8c7da2f01b34fa6c64
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Fri Nov 14 01:32:37 2025 +0000
+
+    Distribution of chosen variables for research question
+
+ assets/HistogramPlots/Distribution_of_GDP_perCapita.png | Bin 0 -> 19693 bytes
+ assets/HistogramPlots/Distribution_of_HapinessScore.png | Bin 0 -> 19693 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 assets/HistogramPlots/Distribution_of_GDP_perCapita.png
+ create mode 100644 assets/HistogramPlots/Distribution_of_HapinessScore.png
+
+commit bb87bcedbde90310bbf6fbd6570d4c2a237635b8
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Thu Nov 13 20:37:20 2025 +0000
+
+    change to readme.md
+
+ Readme.md | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 129c601ff6425c444b1da99e057b08d78a988f35
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Thu Nov 13 20:25:14 2025 +0000
+
+    Instructions for team memebers to work on their own branches , DO NOT WORK ON MAIN BRANCH
+
+ Working_with_git_branches.md | 103 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 103 insertions(+)
+ create mode 100644 Working_with_git_branches.md
+
+commit cb7062559b984ec110bf520f846fcd6abfa7fcf5
+Author: KimtaiKogoKevin <kk24acz@herts.ac.uk>
+Date:   Thu Nov 13 20:13:18 2025 +0000
+
+    Initialization of repo with Readme file
+
+ 2015_original_dataset.csv | 159 ++++++++++++++++++++++++++++++++++++++++++++++
+ Readme.md                 |  75 ++++++++++++++++++++++
+ 2 files changed, 234 insertions(+)
+ create mode 100644 2015_original_dataset.csv
+ create mode 100644 Readme.md
