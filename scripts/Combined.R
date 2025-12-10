@@ -149,16 +149,16 @@ dev.off()
 
 # Correlation Analysis
 # Correlation for the entire dataset(in-terms of GDP)
-cor_total <- cor.test(df$HappScore, df$GDPperCapita, method = "pearson")
-# print("--- Correlation: Total Dataset (Pearson) ---")
-# print(cor_total)
+cor_total <- cor.test(df$HappScore, df$GDPperCapita, method = "spearman")
+print("--- Correlation: Total Dataset (Pearson) ---")
+print(cor_total)
 
 # Correlation for the top 60 countries
 cor_top60 <- cor.test(top60$HappScore, top60$GDPperCapita, method = "spearman")
-# print("--- Correlation: Top 60 Countries (Spearman) ---")
-# print(cor_top60)
+print("--- Correlation: Top 60 Countries (Spearman) ---")
+print(cor_top60)
 
 # Correlation for the bottom 60 countries(in-terms of GDP)
 cor_bottom60 <- cor.test(bottom60$HappScore, bottom60$GDPperCapita, method = "spearman")
-# print("--- Correlation: Bottom 60 Countries (Spearman) ---")
-# print(cor_bottom60)
+print("--- Correlation: Bottom 60 Countries (Spearman) ---")
+print(cor_bottom60)
