@@ -1,3 +1,6 @@
+fda75a4 - Gideon Ganah, 2025-12-11 : Final
+bed28d7 - KimtaiKogoKevin, 2025-12-11 : Pushed the final version of the code after thorough revision
+95e8053 - KimtaiKogoKevin, 2025-12-11 : Finalization of the documentation
 20fe022 - Gideon Ganah, 2025-12-10 : Merge branch 'main' of https://github.com/KimtaiKogoKevin/TeamResearchPractical_ds282 Merging to repo
 80ba251 - Gideon Ganah, 2025-12-10 : Added some content
 253a909 - KimtaiKogoKevin, 2025-12-10 : Did some revision of the documentation with Gideon and Daniel and uploaded the document to github
