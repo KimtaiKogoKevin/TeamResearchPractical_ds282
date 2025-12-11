@@ -1,0 +1,67 @@
+20fe022 - Gideon Ganah, 2025-12-10 : Merge branch 'main' of https://github.com/KimtaiKogoKevin/TeamResearchPractical_ds282 Merging to repo
+80ba251 - Gideon Ganah, 2025-12-10 : Added some content
+253a909 - KimtaiKogoKevin, 2025-12-10 : Did some revision of the documentation with Gideon and Daniel and uploaded the document to github
+1e259c0 - Pirategh, 2025-12-10 : Kelvin - I added an Edits file to be adopted for the clean report: added Edits.docx file to repo
+6aee712 - Pirategh, 2025-12-10 : yourname: updated chapter X/Y in report
+faac86b - Gideon Ganah, 2025-12-08 : I prepared the innitial draft of the report and have it cleaned up and well edited. kindly check for corrections and improvements
+34e4145 - Gideon Ganah, 2025-12-08 : I did minor corrections to the report
+32e7d23 - Daniel Tule, 2025-12-08 : Minor correction in 3
+49b7c1b - Daniel Tule, 2025-12-08 : Minor correction in 3.3
+d0eb6af - Edosa Izevbizua, 2025-12-08 : Merge pull request #7 from KimtaiKogoKevin/Samuel
+f7907ab - Samuel Izevbizua, 2025-12-08 : bg research
+47a3c38 - Samuel Izevbizua, 2025-12-08 : ignore all temporary files
+8acc4ca - Daniel Tule, 2025-12-07 : Corrected error in visualisations. Scatter plots not showing.
+f42241f - Gideon Ganah, 2025-12-07 : I did some minor corrections in the report
+ffaa50e - Edosa Izevbizua, 2025-12-07 : Merge pull request #6 from KimtaiKogoKevin/Samuel
+a4ebaee - Samuel Izevbizua, 2025-12-07 : cleanup: comment out correlation analysis print statements for clarity
+2ba534b - Samuel Izevbizua, 2025-12-07 : chore: cleanup repository and consolidate analysis scripts
+28fa99a - Gideon Ganah, 2025-12-06 : I added the conclusion of our analysis to the report
+2fdf8ed - Daniel Tule, 2025-12-06 : Cleaning up report. Visualisations moved to after table of contents for clarity.
+6e9bb69 - Daniel Tule, 2025-12-06 : Description for visualisations, 3.2 and 3.3, polished.
+9905ee6 - Daniel Tule, 2025-12-05 : Visualisation infor and description added to doc
+a2bac10 - Pirategh, 2025-12-04 :  Kelvin I made edits to the word count: updated Chapter 5 in report template
+b667716 - KimtaiKogoKevin, 2025-12-04 : Completed Introduction section of the documentation
+08b17e8 - Daniel Tule, 2025-12-04 : Made all visualisations have uniform graduation.
+ca6c9fd - Daniel Tule, 2025-12-04 : Made all visualisations have uniform graduation.
+590f40f - KimtaiKogoKevin, 2025-12-04 : Added the introduction plus research question need to finish up on the null and alterantive hypothesis today
+109d858 - Daniel Tule, 2025-12-04 : Realised error while documenting visualisations. Decreasing is supposed to be true, this means our visuals have changed.
+e02aa4d - KimtaiKogoKevin, 2025-12-03 :  Added the first paragraph of the introduction
+b468331 - KimtaiKogoKevin, 2025-12-03 :  Added the first paragraph of the introduction
+aff9bcc - Gideon Ganah, 2025-12-03 : Minor corrections to Report
+937840f - Gideon Ganah, 2025-12-03 : I did some minor corrections to the report file
+8ed7102 - Gideon Ganah, 2025-12-03 : I have added the statistical analyses to the word document. that is the chapter 4
+ba80604 - KimtaiKogoKevin, 2025-12-03 : Forgot to exclude DSStore added to gitignore
+73ed0de - KimtaiKogoKevin, 2025-12-03 : Activcated the .gitignore to remove unnessary R files going foward that are not , such as RHistory and the Rproject user folder
+1db3bcd - KimtaiKogoKevin, 2025-12-03 : added the problem area and our mmotivation behind the study to the repo , the document is still very messy at the moment  but we aim to fine tune it soon
+0dbec19 - KimtaiKogoKevin, 2025-12-03 : MAde some changes to the Introduction and a clarification with group memebers that this is the file we will edit for our main report and not the duplicate which I will proceed to delete
+b003f81 - Gideon Ganah, 2025-12-03 : I resolved the merge conflict and added the resolved file
+ad553e6 - Gideon Ganah, 2025-12-03 : I have done the statistical tests which are updated in the combined R script in the assets directory
+2a29ce5 - Daniel Tule, 2025-12-03 : Corrected some minor labeling errors in our code and generated accurate visualisations.
+0e88603 - Daniel Tule, 2025-12-03 : I noticed the update, but the x-axis is still going out of bounds, so I've corrected that.
+03e2a98 - Daniel Tule, 2025-12-03 : Visualisations updated as per Monday's feedback.
+fae0f05 - Gideon Ganah, 2025-12-03 : I editted the combined R script to add the code for generating the histogram for the entire dataset. I also exported the PNG file to the assets directory
+6085a92 - Gideon Ganah, 2025-12-03 : I did some commenting of the renamed columns in the combined R file
+8a54df6 - Gideon Ganah, 2025-12-03 : I did some spell-check in chapter 5
+52f4fd7 - Gideon Ganah, 2025-12-03 : Merge branch 'main' of https://github.com/KimtaiKogoKevin/TeamResearchPractical_ds282 "I am trying to pull the updated repo, I have to save my local changes first"
+18b0507 - Gideon Ganah, 2025-12-03 : Saved local changes before pulling
+0a58ae6 - Pirategh, 2025-12-02 : Added Chapter 5: Evaluation section with group experience analysis
+7b0eb53 - Samuel Izevbizua, 2025-12-02 : Add .gitignore file to exclude R project files
+354f3bb - Samuel Izevbizua, 2025-12-02 :  Add .gitignore file to exclude R project files
+a4f859d - Daniel Tule, 2025-12-01 : Update Rhistory file
+3958721 - Daniel Tule, 2025-12-01 : I've done the visulisations for the otop and bottom 60 categories.
+690b6d5 - Gideon Ganah, 2025-11-28 : I have added the report file  for working
+417757e - Gideon Ganah, 2025-11-27 : I have added The R Script for the Top 50 / Buttom 50 GDP Correlation analysis
+f507665 - Daniel Tule, 2025-11-27 : I've renamed some columns with long names.
+ffd7158 - KimtaiKogoKevin, 2025-11-27 :  change to working with git file  regarding not pushing to main because the tutors will mainly evaluate the main branch , and after conultation they say there is no need for branching, additionally I have added a folder with our power point slides for the first presentation
+4839220 - KK_Kimutai, 2025-11-27 : Merge pull request #4 from KimtaiKogoKevin/GideonGanah
+169e809 - Gideon Ganah, 2025-11-27 : I added the scatter plot
+bbdb68a - KK_Kimutai, 2025-11-27 : Merge pull request #3 from KimtaiKogoKevin/KogoKevin
+e28ae00 - KimtaiKogoKevin, 2025-11-27 : Created scripts directory where I have saved two scripts , one for dividing the dataset into different regions and one that draws a histogram with a curve showing that the data is normally distributed
+d7a9b91 - KK_Kimutai, 2025-11-25 : Merge pull request #2 from KimtaiKogoKevin/KogoKevin
+3250c62 - KimtaiKogoKevin, 2025-11-25 : a function to mmap the data into different regions
+2836f16 - KK_Kimutai, 2025-11-14 : Merge pull request #1 from KimtaiKogoKevin/KogoKevin
+b2c99c6 - KimtaiKogoKevin, 2025-11-14 : Distribution of chosen variables for research question with correction
+84fec02 - KimtaiKogoKevin, 2025-11-14 : Distribution of chosen variables for research question
+bb87bce - KimtaiKogoKevin, 2025-11-13 : change to readme.md
+129c601 - KimtaiKogoKevin, 2025-11-13 : Instructions for team memebers to work on their own branches , DO NOT WORK ON MAIN BRANCH
+cb70625 - KimtaiKogoKevin, 2025-11-13 : Initialization of repo with Readme file
